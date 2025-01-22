@@ -1,0 +1,962 @@
+.menu {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu .div {
+  width: 1250px;
+  height: 2090px;
+  position: relative;
+}
+
+.menu .frame {
+  height: 550px;
+  top: 0;
+  background-color: #000000;
+  position: absolute;
+  width: 1250px;
+  left: 0;
+}
+
+.header {
+  position: sticky;
+  display: flex;
+  top: 0;
+  width: 1250px;
+  left: 8px;
+  align-items: center;
+  height: 45px;
+  background-color: black;
+  z-index: 3;
+}
+
+.logo {
+  position: absolute;
+  width: 69px;
+  height: 27px;
+  top: 10px;
+  left: 55px;
+  object-fit: cover;
+}
+
+.list-menu{
+  list-style: none;
+  position: absolute;
+  display: flex;
+  gap: 55px;
+  top: 0px;
+  left: 720px;
+}
+.list-menu li a{
+  cursor: pointer;
+  text-decoration: none;
+  width: 387px;
+  height: 21px;
+  left: 685px;
+  font-family: "Inter", serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: 0.25s;
+}
+.list-menu li img{
+  position: relative;
+  top: -8px;
+  left: 0px;
+  width: 30px;
+}
+.list-menu .home {
+  color: #15d4ff;
+}
+
+.list-menu li a:hover {
+  color: #15d4ff;
+}
+.list-menu li ul.dropdown li {
+  position: relative;
+  width: 100px;
+  text-align: center;
+  left: -65px;
+  display: block;
+  background: #333;
+  padding: 2px 10px;
+  margin: 5px 0px;
+}
+.list-menu li ul.dropdown {
+width:auto;
+background: nonbe;
+position: absolute;
+z-index: 999;
+display: none;
+}
+.list-menu li:hover ul.dropdown{
+display: block;
+}
+.list-menu .registration{
+  position: relative;
+  width: 100px;
+  height: 20px;
+  left: -10px;
+  top: -3px;
+  text-align: center;
+  border: 2px solid #15d4ff;
+}
+
+.menu .aside {
+  position: absolute;
+  width: 603px;
+  height: 325px;
+  left: 77px;
+}
+
+.menu .main-2 {
+  position: absolute;
+  width: 458px;
+  height: 355px;
+  top: 0;
+  left: 0;
+  border-radius: 43px;
+  border: 3px solid;
+  border-color: #15d4ff ;
+  backdrop-filter: blur(5px) ;
+    1;
+      animation: bouncing 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 2.2s;
+
+}
+
+.rectangle {
+position: absolute;
+width: 200px;
+height:40px;
+margin: 412px 200px;
+background-color: black;  
+z-index: 2;
+}
+
+spline-viewer {
+  position: absolute;
+  width: 300px;
+  height: 550px;
+  z-index: 1;
+  margin: -80px 90px ;
+}
+
+.menu .popover h3 {
+  font-family: "Inter", serif;
+  padding: 0px 15px;
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+}
+
+.menu .popover {
+  position: relative;
+  left: 300px;
+  top: 100px;
+  border: solid white 2px;
+  border-radius: 20px;
+  width: 300px;
+  display: none;
+  height: 300px;
+  color: black;
+  background-color: white;
+  z-index: 1;
+   box-shadow: 10px 10px #575757;
+}
+.menu .btn {
+  all: unset;
+  position: absolute;
+  left: 80px;
+  top: 250px;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  width: 130px;
+  height: 37px;
+  cursor: pointer;
+  color: black ;
+  border: 2px solid black;
+  border-radius: 10px;
+    transition: 0.25s;
+}
+.menu .btn:hover{
+  color: #15d4ff;
+  border: 2px solid#15d4ff;
+}
+.menu .button {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  height: 37px;
+  cursor: pointer;
+  background-color: #15d4ff;
+  border-radius: 20px;
+  box-shadow: 0px 11px 14.6px -4px #3c7fc2;
+  transition: 0.25s;
+}
+
+.menu .button {
+  position: absolute;
+  width: 107px;
+  top: 390px;
+  left: 50px;
+  font-family: "Inter", serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.menu .button:hover {
+  background-color: white;
+  box-shadow: 0px 11px 14.6px -4px gray;
+  transform: translateY(-5px);
+}
+.menu .input.box {
+  position: flex;;
+  width: 100%;;
+  text-align: center;
+}
+
+.menu .input.box input {
+  position: relative;
+  width: 250px ;
+  height: 30px;
+  left: 0px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid black;
+  outline: none;
+  font-family:"Inter", serif ;
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+}
+
+.wrapper .input.box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.menu .p {
+  position: absolute;
+  width: 563px;
+  left: 50px;
+  top: 245px;
+  font-family: "Josefin Sans", serif;
+  font-weight: 400;
+  text-align: justify;
+  color: #adadad;
+  font-size: 23px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.menu .p a{
+color: #15d4ff;
+}
+
+.menu .p-2 {
+  position: absolute;
+  width: 565px;
+  left: 50px;
+  top: 65px;
+  font-family: "Josefin Sans", serif;
+  font-weight: 700;
+  text-align: justify;
+  color: #ffffff;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: 70px;
+}
+
+.menu .main {
+  position: absolute;
+  width: 469px;
+  height: 355px;
+  top: 83px;
+  left: 730px;
+}
+
+.menu .overlap {
+  position: relative;
+  width: 465px;
+  height: 355px;
+}
+
+.menu .text-1 {
+  position: absolute;
+  width: 440px;
+  top: 0px;
+  left: 25px;
+  font-family: "Jockey One", serif;
+  font-weight: 400;
+  color: #3cb6fd;
+  font-size: 82px;
+  letter-spacing: 9.84px;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  animation: bouncing 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 2.2s;
+}
+
+.menu .text-2 {
+  position: absolute;
+  width: 426px;
+  top: 100px;
+  left: 25px;
+  font-family: "Jockey One", serif;
+  font-weight: 400;
+  color: #3cb6fd;
+  font-size: 82px;
+  letter-spacing: 0;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  animation: bouncing 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 2.2s;
+
+}
+
+.menu .frame-2 {
+  height: 550px;
+  top: 550px;
+  background-color: #ffffff;
+  position: absolute;
+  width: 1230px;
+  left: 0;
+}
+
+.menu .aside-2 {
+  position: absolute;
+  width: 472px;
+  height: 358px;
+  top: 93px;
+  left: 61px;
+}
+
+.menu .div-wrapper {
+  position: relative;
+  width: 400px;
+  height: 35px;
+  display: inline-block ;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  margin: 10px 0px
+}
+.menu .div-wrapper::after {
+  position: relative;
+  left: 350px;
+  top: 5px;
+  content: "";
+  width: 8px; 
+  aspect-ratio: 1/1;
+  display: inline-block;
+  border-right: 2px solid #434343;
+  border-bottom: 2px solid #434343;
+  transform: rotate(45deg);
+}
+.menu label{
+  position: absolute;
+  overflow: hidden;
+  width: 405px;
+  top: 10px;
+  left: 13px;
+  font-family: "Josefin Sans", serif;
+  font-weight: 700;
+  color: #434343;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.menu  .p-4{
+  position: absolute;
+  max-height: 1px;
+  overflow: hidden;
+  display: inline-block;
+  top: 30px;
+  left: 15px;
+  font-family:  "Inter", serif;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3 ease;
+  color: #434343;
+  top: -100%;
+  opacity: 0.5;
+  transition: all 0.3 ease;
+
+}
+
+.menu .eason-4 input:checked ~ .p-4{ 
+  max-height: 300px;
+  padding-bottom: 25px;
+  background: none;
+  opacity: 1;
+  top: 0;
+}
+
+
+.menu .overlap-wrapper {
+  position: absolute;
+  width: 468px;
+  height: 39px;
+  top: 245px;
+  left: 0px;
+}
+
+.menu .overlap-group-wrapper {
+  position: absolute;
+  width: 468px;
+  height: 39px;
+  top: 176px;
+  left: 0px;
+}
+
+.menu .element-2 {
+  position: absolute;
+  width: 468px;
+  height: 39px;
+  top: 102px;
+  left: 0px;
+}
+.menu .element {
+  position: absolute;
+  width: 468px;
+  height: 39px;
+  top: 319px;
+  left: 0px;
+}
+
+ .kenapa-AI {
+  position: absolute;
+  top: 20px;
+  left:  30px;
+  font-family:  "Josefin Sans", serif;
+  font-weight: 700 ;
+  color: #000000;
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+.Pengertian{
+  position: absolute;
+  top: 90px;
+  left:  30px;;
+  width: 600px;
+  text-align: justify;
+  font-family:  "Inter", serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.tab {
+  position: relative;
+  top: 180px;
+  left: 30px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+    width: 592px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: #444444;
+  font-family: "josefin sans", serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tab link */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  position: relative;
+  top: 180px;
+  left: 30px;
+  width: 568px;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  color: #444444;
+  border-top: none;
+}
+.tabcontent h3 {
+  font-family: "josefin sans", serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.tabcontent h1 {
+  font-family: "inter", serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 0px 75px;
+}
+
+.tabcontent li {
+  padding: 5px 0px;
+  font-family: "inter", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+}
+.tabcontent .l-1{
+  list-style: none;
+  width: 250px;
+  text-align: center;
+  display: flex;
+  gap: 55px;
+  padding: -10px 0px;
+}
+
+.l-1 li{
+    margin: -20px -15px;
+  font-family: "inter", serif;
+    font-weight: 400;
+  font-size: 12px;
+  color: #444444;
+}
+
+
+.tabcontent p {
+  font-family: "inter", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+}
+
+/* Style the first tab content to display as a block by default */
+#London {
+  display: block; 
+}
+.menu .main-3 {
+  position: absolute;
+  width: 532px;
+  height: 514px;
+  top: 0px;
+  left: 675px;
+}
+
+.menu .overlap-2 {
+  position: absolute;
+  width: 269px;
+  height: 506px;
+  top: 0;
+  left: 263px;
+}
+
+.menu .img {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  top: 246px;
+  left: 9px;
+}
+
+
+.menu .image-1 {
+  width: 236px;
+  height: 236px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+      animation: bouncing 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 2.2s;
+  z-index: 1;
+}
+
+
+.menu .rectangle-1 {
+  top: 64px;
+  left: 16px;
+  position: absolute;
+  width: 211px;
+  height: 192px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgb(21, 212.1, 255) 0%,
+    rgb(228.79, 250.2, 255) 100%
+  );
+       animation: bouncing-2 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 2.2s;
+}
+
+
+.menu .image-2 {
+  width: 236px;
+  height: 236px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+      animation: bouncing 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 2.2s;
+}
+
+.menu .rectangle-2 {
+  top: 64px;
+  left: 25px;
+  position: absolute;
+  width: 211px;
+  height: 192px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgb(21, 212.1, 255) 0%,
+    rgb(228.79, 250.2, 255) 100%
+  );
+       animation: bouncing-2 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 2.2s;
+}
+.menu .image-3 {
+  position: absolute;
+  width: 236px;
+  height: 236px;
+  top: 15px;
+  left: 5px;
+animation: bouncing 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 2.2s;
+}
+.menu .rectangle-3 {
+  position: absolute;
+  width: 211px;
+  height: 192px;
+  top: 53px;
+  left: 20px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgb(21, 212.1, 255) 0%,
+    rgb(228.79, 250.2, 255) 100%
+  );
+      animation: bouncing-2 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 2.2s;
+}
+.menu .image-4 {
+  position: absolute;
+  width: 236px;
+  height: 236px;
+  top: 278px;
+  left: 5px;
+        animation: bouncing 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 2.2s;
+}
+.menu .rectangle-4 {
+  top: 298.5px;
+  left: 16px;
+  position: absolute;
+  width: 211px;
+  height: 192px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgb(21, 212.1, 255) 0%,
+    rgb(228.79, 250.2, 255) 100%
+  );
+       animation: bouncing-2 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 2.2s;
+}
+
+
+.product {
+  position: relative;
+  height: 550px;
+  top: 1100px;
+  background-color: #000000;
+  position: absolute;
+  width: 1210px;
+  left: 0;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-category {
+  position: relative;
+  color: white;
+  font-family: "Josefin Sans", serif;
+  font-weight: 700;
+  padding: 0 10vw;
+  font-size: 40px;
+  left: -100px;
+  text-transform: capitalize;
+}
+
+.product-container {
+  padding: 20px 0vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  border: 5px solid #15d4ff;
+  border-radius: 10px;
+  width: 250px;
+  height: 340px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  top: 10px;
+  left: 50px;
+  width: 150px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-info {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+  left: 25px;
+  top: 10px;
+}
+
+
+.product-short-description {
+  font-family: "josefin sans" ,serif;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  width: 200px;
+  height: 100%;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  position: relative;
+  text-decoration: none;
+  font-family: "josefin sans" ,serif;
+  top: 20px;
+  left: 120px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+.price:hover {
+  color: #15d4ff;
+}
+
+
+.pre-btn,
+.nxt-btn {
+  border: none;  
+  position: absolute;
+  top: 300px;
+  width: 2wh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:none;
+  cursor: pointer;
+  z-index: 8;
+  color: white;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.menu .aside-wrapper {
+  height: 440px;
+  top: 1650px;
+  background: ;
+  position: absolute;
+  width: 1230px;
+  left: 0;
+}
+
+.menu .aside-3 {
+  position: relative;
+  width: 471px;
+  height: 311px;
+  top: 66px;
+  left: 61px;
+}
+
+.menu .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  height: 37px;
+  cursor: pointer;
+  background-color: #15d4ff;
+  border-radius: 20px;
+  box-shadow: 0px 11px 14.6px -4px #0cb0d5;
+  transition: 0.25s;
+}
+
+.menu .button-2 {
+  position: absolute;
+  width: 107px;
+  top: 280px;
+  left: 500px;
+  font-family: "Inter", serif;
+  font-weight: 700;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+.menu .button-2:hover {
+  background-color: black;
+  box-shadow: 0px 11px 14.6px -4px gray;
+  transform: translateY(-5px);
+}
+
+
+.menu .temukan-transformasi {
+  position: absolute;
+  width: 469px;
+  top: -65px;
+  left: 320px;
+  text-align: center;
+  font-family:  "Josefin Sans", serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.menu .image-5{
+  position: absolute;
+ width: 300px;
+ left: 800px;
+}
+.menu .info {
+  height: 150px;
+  top: 450px;
+  background-color: #15d4ff;
+  position: absolute;
+  width: 1230px;
+  left: 0;
+}
+
+.menu .inf {
+  position: relative;
+  width: 471px;
+  height: 100px;
+  top: 66px;
+  left: 61px;
+}
+
+.menu .L {
+  position: absolute;
+  width: 469px;
+  top: -75px;
+  left: 450px;
+  font-family:  "Josefin Sans", serif;
+  font-weight: 700;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.menu .L-2 {
+  position: absolute;
+  text-align: center;
+  width: 469px;
+  top: -15px;
+  left: 335px;
+  font-family:  "inter", serif;
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+  padding: 10px 0px;
+  margin: 0px 0px;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(7px);
+  }
+}
+@keyframes bouncing-2 {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
